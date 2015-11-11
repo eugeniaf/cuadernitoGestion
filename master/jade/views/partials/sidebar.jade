@@ -15,7 +15,7 @@ script(type='text/ng-template', id="sidebar-renderer.html")
     // START sidebar nav
     ul.nav
       // START user info
-      li.has-user-block
+      li(ng-if = "app.layout.viewUserInfo").has-user-block
         div(collapse="userBlockVisible", ng-controller="UserBlockController")
           .item.user-block
             // User picture
