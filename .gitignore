@@ -1,3 +1,4 @@
 app/
 master/node_modules
 master/bower_components
+vendor
