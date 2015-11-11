@@ -12,21 +12,24 @@
       // Global Settings
       // ----------------------------------- 
       $rootScope.app = {
-        name: 'Angle',
-        description: 'Angular Bootstrap Admin Template',
+        name: 'Teritos',
+        description: 'La mejor plataforma para tu centro educativo',
         year: ((new Date()).getFullYear()),
         layout: {
           isFixed: true,
-          isCollapsed: false,
-          isBoxed: false,
+          isCollapsable: false,
+          isCollapsed: true,
+          isBoxed: true,
           isRTL: false,
           horizontal: false,
-          isFloat: false,
+          isFloat: true,
           asideHover: false,
-          theme: "app/css/theme-f.css"
+          theme: "app/css/theme-f.css",
+          viewUserInfo: false
         },
         useFullLayout: false,
         hiddenFooter: false,
+        offsidebarOpenEnabled: false,
         offsidebarOpen: false,
         asideToggled: false,
         viewAnimation: 'ng-fadeInUp'
