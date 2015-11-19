@@ -15,7 +15,8 @@
           // Angular based script (use the right module name)
           modules: [
             // {name: 'toaster', files: ['vendor/angularjs-toaster/toaster.js', 'vendor/angularjs-toaster/toaster.css']}
-            {name: 'ui.map',                    files: ['vendor/angular-ui-map/ui-map.js']}
+            {name: 'ui.map',                    files: ['vendor/angular-ui-map/ui-map.js']},
+            {name: 'ngWig',                     files: ['vendor/ngWig/dist/ng-wig.min.js'] }
           ]
         })
         ;

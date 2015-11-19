@@ -1,0 +1,68 @@
+{
+  "mails":[
+    {
+      "id": 10,
+      "subject": "Pañales",
+      "from": {
+        "name": "Evelyn Perez", "email" : "evelyn@example.com",
+        "avatar": "app/img/user/01.jpg"
+      },
+      "to":[
+        {"name":"John", "email":"John.mail@example.com"}
+      ],
+      "content":"Lucas lleva los pañales para la semana",
+      "attach":[
+        {"name":"IMG_4.jpg", "url":"app/img/bg4.jpg"},
+        {"name":"IMG_5.jpg", "url":"app/img/bg5.jpg"}
+      ],
+      "date":"18:20 11/23/2014",
+      "folder":"important"
+    },
+    {
+      "id": 9,
+      "subject": "Retiro",
+      "from": {
+        "name": "Pablo Roca", "email" : "allison@example.com",
+        "avatar": "app/img/user/02.jpg"
+      },
+      "to":[
+        {"name":"John", "email":"John.mail@example.com"}
+      ],
+      "content":"Hoy Mica se vuelve con la abuela, la pasa a buscar a las 17:00 ",
+      "date":"15:20 11/23/2014",
+      "folder":"important"
+    },
+    {
+      "id": 8,
+      "subject": "Paseo",
+      "from": {
+        "name": "Camilo Carlson", "email" : "daryl@example.com",
+        "avatar": "app/img/user/03.jpg"
+      },
+      "to":[
+        {"name":"John", "email":"John.mail@example.com"}
+      ],
+      "content":"Lleva la plata del paseo en la mochila",
+      "attach":[
+        {"name":"IMG_7.jpg", "url":"app/img/bg7.jpg"}
+      ],
+      "date":"18:20 11/22/2014",
+      "folder":"important"
+    },
+    {
+      "id": 6,
+      "subject": "Malestar",
+      "from": {
+        "name": "Carla Patron", "email" : "bonnie@example.com",
+        "avatar": "app/img/user/05.jpg"
+      },
+      "to":[
+        {"name":"John", "email":"John.mail@example.com"}
+      ],
+      "content":"Fede está mal de la panza, que no tome leche. Gracias.",
+      "date":"6:20 11/22/2014",
+      "folder":"starred",
+      "state":"unread"
+    }
+  ]
+}

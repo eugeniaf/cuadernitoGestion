@@ -5,8 +5,10 @@
     "translate": "sidebar.heading.HEADER"
   },
   {
-    "text": "Inicio",
-    "sref": "app.welcome",
+    "text": "Inicio",     
+    "sref": "app.mailbox.folder", 
+    "params": {"folder": "inbox"} , 
+    "translate": "sidebar.nav.extra.MAILBOX", 
     "icon": "icon-home"
   }
 ]

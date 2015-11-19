@@ -19,7 +19,7 @@
         $locationProvider.html5Mode(false);
 
         // defaults to dashboard
-        $urlRouterProvider.otherwise('/app/welcome');
+        $urlRouterProvider.otherwise('/app/mailbox/folder/{"folder": "inbox"}');
 
         // 
         // Application Routes
@@ -80,6 +80,31 @@
             title: 'ngMaterial',
             templateUrl: helper.basepath( 'material.ngmaterial.html' )
           })    
+          // Mailbox
+          // ----------------------------------- 
+          .state('app.mailbox', {
+              url: '/mailbox',
+              title: 'Mailbox',
+              abstract: true,
+              templateUrl: helper.basepath('mailbox.html')
+          })
+          .state('app.mailbox.folder', {
+              url: '/folder/:folder',
+              title: 'Mailbox',
+              templateUrl: helper.basepath('mailbox-inbox.html')
+          })
+          .state('app.mailbox.view', {
+              url : '/{mid:[0-9]{1,4}}',
+              title: 'View mail',
+              templateUrl: helper.basepath('mailbox-view.html'),
+              resolve: helper.resolveFor('ngWig')
+          })
+          .state('app.mailbox.compose', {
+              url: '/compose',
+              title: 'Mailbox',
+              templateUrl: helper.basepath('mailbox-compose.html'),
+              resolve: helper.resolveFor('ngWig')
+          })          
           // 
           // CUSTOM RESOLVES
           //   Add your own resolves properties
